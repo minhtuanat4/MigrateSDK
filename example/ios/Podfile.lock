@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - migrate_sdk (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - migrate_sdk (from `.symlinks/plugins/migrate_sdk/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  migrate_sdk:
+    :path: ".symlinks/plugins/migrate_sdk/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  migrate_sdk: 11fdce1ba118d3199cadd0104672c14394a60ad1
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.3
