@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
     // We also handle the message potentially returning null.
     try {
       platformVersion =
-          await MigrateSdk.platformVersion ?? 'Unknown platform version';
+          await MigrateSdk.defaultGreeting ?? 'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }

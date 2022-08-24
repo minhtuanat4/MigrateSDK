@@ -1,7 +1,7 @@
 name: migrate_sdk
-description: A new flutter plugin project.
-version: 0.0.1
-homepage: 'https://migratesdk.com'
+description: A VTC Plugin helps you to open Payment Gateway VTC PAY. 
+version: 0.0.5
+homepage: https://vtcpay.vn
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
@@ -10,6 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  eventify: ^1.0.0
+  fluttertoast: ^8.0.7
+  package_info_plus: ^1.4.3
   
 
 dev_dependencies:

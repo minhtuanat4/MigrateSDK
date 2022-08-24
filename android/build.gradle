@@ -32,4 +32,11 @@ android {
     defaultConfig {
         minSdkVersion 16
     }
+      lintOptions {
+        disable 'InvalidPackage'
+    }
+    dependencies {
+        implementation files('libs/SDKPay.rar')
+        implementation 'com.google.code.gson:gson:2.2.4'
+    }
 }

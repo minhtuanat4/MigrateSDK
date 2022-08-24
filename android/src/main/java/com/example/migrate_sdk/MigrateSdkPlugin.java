@@ -24,9 +24,15 @@ public class MigrateSdkPlugin implements FlutterPlugin, MethodCallHandler {
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
-    if (call.method.equals("getPlatformVersion")) {
+    if (call.method.equals("openVTCGateway")) {
+
+     
+     
+    final String r  VTCPaySDK.getInstance().nextFunctionVTCPay(Context context, @FUNCTION_NAME String nameFunction, @NonNull VTCAppInfoModel appInfoModel, ICallback iCallback)
       result.success("Android " + android.os.Build.VERSION.RELEASE);
-    } else {
+    } else if (call.method.equals("getdefaultGreeting")) {
+      result.success("Android Welcome to " + linkVtcPay);
+    }else  {
       result.notImplemented();
     }
   }
