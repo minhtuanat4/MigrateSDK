@@ -21,4 +21,15 @@ class MigrateSdk {
     final String? result = await _channel.invokeMethod('openVTCGateway');
     return result;
   }
+
+  static Future<bool?> isToday(DateTime dateTime) async {
+    final date = dateTime.toUtc().toIso8601String();
+    final bool? isSuccess = await _channel.invokeMethod(
+      'isToday',
+      {
+        'dateTime': date,
+      },
+    );
+    return isSuccess;
+  }
 }

@@ -1,22 +1,41 @@
 PODS:
   - Flutter (1.0.0)
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
   - migrate_sdk (0.0.1):
     - Flutter
+  - package_info_plus (0.4.5):
+    - Flutter
+  - Toast (4.0.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - migrate_sdk (from `.symlinks/plugins/migrate_sdk/ios`)
+  - package_info_plus (from `.symlinks/plugins/package_info_plus/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Toast
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
   migrate_sdk:
     :path: ".symlinks/plugins/migrate_sdk/ios"
+  package_info_plus:
+    :path: ".symlinks/plugins/package_info_plus/ios"
 
 SPEC CHECKSUMS:
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  migrate_sdk: 11fdce1ba118d3199cadd0104672c14394a60ad1
+  fluttertoast: 16fbe6039d06a763f3533670197d01fc73459037
+  migrate_sdk: cd6ffe4497ec5677ae4a4091930dfd0d4f61197b
+  package_info_plus: 6c92f08e1f853dc01228d6f553146438dafcd14e
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: eca6231561d6dd99739a0d1ed2ecc136a2d54e23
 
 COCOAPODS: 1.11.3

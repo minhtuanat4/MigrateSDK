@@ -54,7 +54,27 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Column(
+            children: [
+              Text('Running on: $_platformVersion\n'),
+
+              /// Phần 4. Hướng dẫn gọi native code từ plugin
+              FutureBuilder<bool?>(
+                future: MigrateSdk.isToday(DateTime.now()),
+                builder: (_, snapshoot) {
+                  return Text(
+                      'isToDay: ${DateTime.now()} is ${snapshoot.data}');
+                },
+              ),
+              FutureBuilder<bool?>(
+                future: MigrateSdk.isToday(DateTime(2021, 01, 01)),
+                builder: (_, snapshoot) {
+                  return Text(
+                      'isToDay: ${DateTime(2021, 01, 01)} is ${snapshoot.data}');
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
